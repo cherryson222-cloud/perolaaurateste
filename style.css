@@ -1,0 +1,518 @@
+/* --- Importação de Fontes Elegantes (Google Fonts) --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap');
+
+/* --- Paleta de Cores com Tons Marinhos --- */
+/* --- Paleta de Cores com Tons Marinhos (Tema Escuro) --- */
+:root {
+    --background: #ffffff;       /* Fundo branco */
+    --text-primary: #333333;     /* Texto principal escuro */
+    --text-secondary: #777777;   /* Texto secundário cinza */
+    --turquoise-main: #1ABC9C;   /* Turquesa principal para detalhes */
+    --turquoise-hover: #16A085;  /* Turquesa para hover */
+    --light-gray: #f8f9fa;       /* Cinza claro para fundos de seção */
+    --border-color: #eeeeee;     /* Cor da borda */
+    --navy-dark: #0a192f;      /* Azul marinho profundo para o fundo */
+    --navy-medium: #172a46;   /* Azul marinho médio para seções */
+    --turquoise-light: #64ffda; /* Turquesa vibrante para destaques e CTAs */
+    --turquoise-dark: #138D75;  /* Turquesa escuro para links */
+    --text-light: #ccd6f6;     /* Cor de texto clara */
+    --text-dark: #8892b0;      /* Cor de texto secundária */
+    --white: #ffffff;         /* Branco puro */
+}
+
+/* --- Estilos Globais e Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Fonte elegante e legível para o corpo */
+    background-color: var(--background);
+    color: var(--text-primary);
+    background-color: var(--navy-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Fonte serifada e sofisticada para títulos */
+    color: var(--text-primary);
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+a {
+    color: var(--turquoise-main);
+    color: var(--turquoise-light);
+    text-decoration: none;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    background-color: var(--background);
+    background-color: var(--navy-dark);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--navy-medium);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    color: var(--white);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 25px;
+}
+
+.nav-menu a {
+    color: var(--text-primary);
+    color: var(--text-light);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--turquoise-main);
+    color: var(--turquoise-light);
+}
+
+/* --- Seção Principal (Hero) --- */
+.hero {
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1611652032999-2a780b835a24?q=80&w=2070') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    color: var(--text-light);
+}
+
+.cta-button {
+    background-color: var(--turquoise-main);
+    color: #ffffff;
+    background-color: var(--turquoise-light);
+    color: var(--navy-dark);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex; /* Alinha o ícone e o texto */
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.cta-button:hover {
+    background-color: var(--turquoise-hover);
+    transform: translateY(-2px);
+    background-color: var(--white);
+}
+
+/* --- Filtro de Categorias --- */
+.filter-nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    border: 1px solid var(--navy-medium);
+    color: var(--text-dark);
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    width: 150px; /* Define uma largura fixa para todos os botões */
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-flex; /* Alinha o ícone e o texto */
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.filter-btn:hover {
+    background-color: var(--turquoise-main);
+    color: #ffffff;
+    border-color: var(--turquoise-main);
+    background-color: var(--turquoise-light);
+    color: var(--navy-dark);
+    border-color: var(--turquoise-light);
+}
+
+.filter-btn svg {
+    stroke: currentColor; /* O ícone herda a cor do texto do botão */
+    transition: stroke 0.3s ease;
+}
+
+.filter-btn-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    border: 1px solid transparent;
+}
+
+.filter-btn.active {
+    background-color: var(--turquoise-main);
+    color: #ffffff;
+    border-color: var(--turquoise-main);
+    background-color: var(--turquoise-light);
+    color: var(--navy-dark);
+    border-color: var(--turquoise-light);
+}
+
+/* --- Seção de Produtos em Destaque --- */
+.featured-products {
+    padding: 60px 0;
+    background-color: var(--light-gray);
+    background-color: var(--navy-medium);
+}
+
+/* Estilo para o card de produto quando está escondido */
+.product-card.hide {
+    display: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    background-color: var(--navy-dark);
+    border: 1px solid #2a3f5e;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Adicionado para usar flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço, cortando o excesso */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    color: var(--text-light);
+}
+
+.product-price {
+    color: var(--turquoise-main);
+    color: var(--turquoise-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-size-selector {
+    margin: 10px 0 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-size-selector label {
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.product-size-selector select {
+    background-color: var(--navy-medium);
+    color: var(--text-light);
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.product-size-selector select:focus {
+    outline: none;
+    border-color: var(--turquoise-light);
+}
+
+.product-summary #checkout-product-size-container {
+    margin-top: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.product-card .cta-button {
+    margin-top: auto; /* Empurra o botão para o final do card */
+}
+
+/* --- Rodapé --- */
+.footer {
+    background-color: #ffffff;
+    color: var(--text-secondary);
+    background-color: var(--navy-dark);
+    color: var(--text-dark);
+    padding: 40px 0;
+    border-top: 1px solid var(--navy-medium);
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    color: var(--text-dark);
+    transition: color 0.3s ease;
+}
+
+.social-links svg {
+    width: 22px;
+    height: 22px;
+}
+
+.social-links a:hover {
+    color: var(--turquoise-main);
+    color: var(--turquoise-light);
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* --- Classe Utilitária --- */
+.hide {
+    display: none !important;
+}
+
+/* --- Estilos do Modal de Checkout --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 25, 47, 0.85); /* Fundo escuro com transparência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.modal-hidden {
+    opacity: 0;
+    pointer-events: none; /* Impede cliques quando escondido */
+}
+
+.modal-content {
+    background-color: var(--navy-medium);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--navy-medium);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95); /* Efeito de zoom inicial para animação */
+    transition: transform 0.3s ease;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--white);
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: var(--turquoise-light);
+}
+
+/* Animação de zoom-in para o conteúdo do modal quando ele aparece */
+.modal-overlay:not(.modal-hidden) .modal-content {
+    transform: scale(1);
+}
+
+/* --- Estilos do Resumo e Formulário no Modal --- */
+.product-summary {
+    background-color: var(--navy-dark);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.product-summary h3, .product-summary p {
+    margin: 5px 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.product-summary span {
+    color: var(--turquoise-light);
+    font-weight: bold;
+}
+
+.checkout-form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.checkout-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.checkout-form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--navy-medium);
+    border-radius: 5px;
+    background-color: var(--navy-dark);
+    color: var(--text-light);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.checkout-form-group input:focus {
+    outline: none;
+    border-color: var(--turquoise-light);
+}
+/* Estilo para o botão de gerar pix dentro do modal */
+.modal-content .cta-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* --- Estilos da Seção Pix no Modal --- */
+.pix-info {
+    margin-top: 20px;
+}
+
+.pix-info #pix-timer {
+    color: var(--turquoise-light);
+    font-weight: bold;
+}
+
+.pix-qrcode {
+    background: white; /* Fundo branco para o QR code ser legível */
+    padding: 10px;
+}
+
+/* Reutilizando estilos do checkout.css que você já tinha */
+.pix-copy-paste, .pix-qrcode, .warning {
+    margin-top: 15px;
+}
+
+.pix-copy-paste {
+    display: flex;
+    margin-top: 10px;
+}
+
+.pix-copy-paste input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--navy-medium);
+    background-color: var(--navy-dark);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    border-radius: 5px 0 0 5px;
+    font-family: monospace; /* Melhora a leitura de códigos */
+}
+
+.pix-copy-paste input:focus {
+    outline: none;
+}
+
+.pix-copy-paste button {
+    padding: 12px 20px;
+    background-color: var(--white); /* Fundo branco, como solicitado */
+    color: var(--navy-dark); /* Texto escuro para contraste */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Impede que o texto quebre */
+}

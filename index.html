@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pérola Aura - Joias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Pérola Aura</a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#colecoes">Coleções</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Elegância que Inspira</h1>
+                <p>Descubra joias únicas que refletem a beleza do oceano e a pureza da pérola.</p>
+                <button class="cta-button">Ver Coleção</button>
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container filter-nav">
+                <button class="filter-btn active" data-filter="all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                    Todas
+                </button>
+                <button class="filter-btn" data-filter="relogio">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Relógios
+                </button>
+                <button class="filter-btn" data-filter="pulseira">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 20.5c-5 0-9-4-9-9s4-9 9-9h3c5 0 9 4 9 9s-4 9-9 9h-3z"></path><path d="M10.5 2.5c-5 0-9 4-9 9s4 9 9 9h3c5 0 9 4 9 9s-4 9-9 9h-3z"></path></svg>
+                    Pulseiras
+                </button>
+                <button class="filter-btn" data-filter="colar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    Colares
+                </button>
+            </div>
+        </section>
+
+        <section id="relogios" class="featured-products">
+            <div class="container">
+                <h2>Nossos Relógios</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="relogio">
+                        <a href="https://i.ibb.co/rRLMJ9ZW/Captura-de-tela-2025-12-11-162054.png" target="_blank">
+                            <img src="https://i.ibb.co/rRLMJ9ZW/Captura-de-tela-2025-12-11-162054.png" alt="Relógio de pulso">
+                        </a>
+                        <h3>Relógio</h3>
+                        <p class="product-price">R$ 75,00</p>
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                    <!-- Você pode adicionar mais relógios aqui, seguindo o mesmo modelo -->
+                </div>
+            </div>
+        </section>
+
+        <section id="pulseiras" class="featured-products">
+            <div class="container">
+                <h2>Nossas Pulseiras</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="pulseira">
+                        <a href="https://i.ibb.co/20kt0QXR/Captura-de-tela-2025-12-11-162114.png" target="_blank">
+                            <img src="https://i.ibb.co/20kt0QXR/Captura-de-tela-2025-12-11-162114.png" alt="Pulseira estilo Pandora com berloques">
+                        </a>
+                        <h3>Pulseira Estilo Pandora</h3>
+                        <p class="product-price">R$ 69,90</p>
+                        <div class="product-size-selector">
+                            <label for="size-pandora">Tamanho:</label>
+                            <select name="size" id="size-pandora" class="size-select">
+                                <option value="17cm">17cm</option>
+                                <option value="18cm">18cm</option>
+                                <option value="19cm">19cm</option>
+                                <option value="20cm">20cm</option>
+                            </select>
+                        </div>
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                    <div class="product-card" data-category="pulseira">
+                        <a href="https://i.ibb.co/7d3Qqt84/Captura-de-tela-2025-12-11-162923.png" target="_blank">
+                            <img src="https://i.ibb.co/7d3Qqt84/Captura-de-tela-2025-12-11-162923.png" alt="Pulseira Megan com elos dourados">
+                        </a>
+                        <h3>Pulseira Megan</h3>
+                        <p class="product-price">R$ 55,00</p>
+                        <!-- Este produto não tem seletor de tamanho, então o espaço fica livre -->
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="colares" class="featured-products">
+            <div class="container">
+                <h2>Nossos Colares</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-category="colar">
+                        <a href="https://i.ibb.co/3ysq6gLH/Captura-de-tela-2025-12-11-164738.png" target="_blank">
+                            <img src="https://i.ibb.co/3ysq6gLH/Captura-de-tela-2025-12-11-164738.png" alt="Conjunto de colar e brincos">
+                        </a>
+                        <h3>Conjunto Gota de Luz</h3>
+                        <p class="product-price">R$ 79,90</p>
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                    <div class="product-card" data-category="colar">
+                        <a href="https://i.ibb.co/4wtS22DJ/Captura-de-tela-2025-12-11-164750.png" target="_blank">
+                            <img src="https://i.ibb.co/4wtS22DJ/Captura-de-tela-2025-12-11-164750.png" alt="Colar minimalista dourado">
+                        </a>
+                        <h3>Colar Minimalista</h3>
+                        <p class="product-price">R$ 45,00</p>
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                    <div class="product-card" data-category="colar">
+                        <a href="https://i.ibb.co/HfsRL9gx/Captura-de-tela-2025-12-11-164759.png" target="_blank">
+                            <img src="https://i.ibb.co/HfsRL9gx/Captura-de-tela-2025-12-11-164759.png" alt="Choker brilhoso com pedras">
+                        </a>
+                        <h3>Choker Brilhoso</h3>
+                        <p class="product-price">R$ 62,00</p>
+                        <button class="cta-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Pérola Aura &copy; 2025 - Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+                <p class="copyright">Simulação de site criada para fins de demonstração.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================================== -->
+    <!-- ========= INÍCIO DO MODAL DE CHECKOUT PIX ========= -->
+    <!-- ================================================== -->
+    <div id="pix-checkout-modal" class="modal-overlay modal-hidden">
+        <div class="modal-content">
+            <button class="close-button">&times;</button>
+            <h2>Finalizar Compra</h2>
+
+            <!-- Resumo do Produto -->
+            <div class="product-summary">
+                <h3>Produto: <span id="checkout-product-name"></span></h3>
+                <p>Valor: <span id="checkout-product-price"></span></p>
+                <p id="checkout-product-size-container" class="hide">Tamanho: <span id="checkout-product-size"></span></p>
+            </div>
+
+            <!-- Formulário de E-mail -->
+            <div class="checkout-form-group">
+                <label for="checkout-email">Seu E-mail (para confirmação):</label>
+                <input type="email" id="checkout-email" placeholder="nome@exemplo.com" required>
+            </div>
+
+            <!-- Botão para acionar a geração do Pix -->
+            <button id="generate-pix-btn" class="cta-button">Gerar Pagamento Pix</button>
+
+            <!-- Detalhes do Pagamento Pix -->
+            <div id="pix-payment-details" class="pix-info hide">
+                <p>Pague com Pix para confirmar seu pedido. O código expira em <strong id="pix-timer">05:00</strong>.</p>
+                
+                <!-- QR Code (gerado via API) -->
+                <img id="pix-qrcode-img" src="" alt="QR Code Pix" class="pix-qrcode">
+
+                <p>Ou copie o código e cole no seu app:</p>
+                <div class="pix-copy-paste">
+                    <input type="text" id="pix-code-input" readonly>
+                    <button id="copy-pix-btn">Copiar</button>
+                </div>
+                <small class="warning"><strong>Atenção:</strong> Esta é uma demonstração e não processa pagamentos reais.</small>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================ -->
+    <!-- ========= FIM DO MODAL DE CHECKOUT PIX ========= -->
+    <!-- ================================================ -->
+
+    <script src="script.js"></script>
+</body>
+</html>
